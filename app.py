@@ -1,5 +1,5 @@
 import requests
-from flask import Flask
+from flask import Flask, render_template
 # importing os module for environment variables
 import os
 # importing necessary functions from dotenv library
@@ -15,14 +15,23 @@ app = Flask(__name__)
 
 ##
 @app.route('/')
-def hello_world():
+def index():
     response = requests.get(CAT_FACTS_URL)
     data = response.json()
 
     # Extract the cat fact
     fact = data.get("data", ["No fact found"])[0]
 
-    return f"Interesting Cat Fact: {fact}"
+    return render_template("index.html")
 
+@app.route('/catfacts')
+def catfacts():
+    response = requests.get(CAT_FACTS_URL)
+    data = response.json()
+
+    # Extract the cat fact
+    fact = data.get("data", ["No fact found"])[0]
+
+    return render_template("catfacts.html", fact=fact)
 if __name__ == '__main__':
     app.run()
