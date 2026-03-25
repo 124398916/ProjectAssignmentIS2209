@@ -7,6 +7,7 @@ from dotenv import load_dotenv, dotenv_values
 # loading variables from .env file
 load_dotenv()
 
+
 DATABASE_URL = os.getenv("DATABASE_URL")
 CAT_FACTS_API_KEY = os.getenv("CAT_FACTS_API_KEY")
 CAT_FACTS_URL = 'https://meowfacts.herokuapp.com/'
