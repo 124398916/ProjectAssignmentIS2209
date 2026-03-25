@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Welcome to Cat Facts!</title>
-    <h1> Welcome to Cat Facts !</h1>
 </head>
 <body>
-<p> On this site, everytime you refresh you will be met with an interesting cat fact !</p>
-<nav>
-    <a href="/catfacts">Cat Facts</a>
-</nav>
+<div class="card">
+
+    <h1>Welcome to Cat Facts</h1>
+    <p>On this site, everytime you refresh you will be met with an interesting cat fact ! </p>
+    <br><br>
+    <a href="/catfacts" class="btn"> See Cat Facts </a>
+
+</div>
+
 </body>
 </html>
