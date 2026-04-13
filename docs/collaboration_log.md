@@ -106,6 +106,6 @@ At peak we had 9 issues open simultaneously across the board.
 
 | Challenge                                            | How We Resolved It                                                          |
 |------------------------------------------------------|-----------------------------------------------------------------------------|
-| Docker not working during class                      | met up again, and worked through it at our own pace                         |
+| Docker not working during class                      | met up again, and worked through it at our own pace.                        |
 | getting out env to work                              | had to double check posted document                                         |
 | making sure all changes made were commited to github | we only worked on the project together, so we could communicate any changes |
